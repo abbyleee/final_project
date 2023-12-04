@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="dist/css/lightbox.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600&family=Montserrat:wght@300&display=swap">
+    <title>Pets</title>
+</head>
+<body>
+    <a href ="#main" id= "skip" >Skip to Main Content</a>
+    <nav>
+            <div class="topnav">
+                <h1>Pets
+                    <i class="fa fa-paw"></i></h1>
+                <!-- Navigation links (hidden by default) -->
+                <div id="myLinks">
+                    <li class="head">
+                        <a href="index.html">Travel</a>
+                      </li>
+                    <li class="head">
+                        <a href="recipes.html">Recipes</a>
+                    </li>
+                    <li class="current head">
+                        <a href="pets.html">Pets</a>
+                        <button class="accordion">expand</button>
+                        <div class="panel">
+                            <ul class="column_list">
+                                <li><a href ="#cooper">Cooper</a></li>
+                                <li><a href ="#mocha">Mocha</a></li>
+                                <li><a href ="#zack">Zack</a></li>
+                                <li><a href ="#jingle">Jingle</a></li>
+                                <li><a href ="#bo">Bo</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </div>
+                <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+                <button class="icon" onclick="myFunction()" aria-label="Toggle Navigation Menu">
+                <i class="fa fa-bars" alt="Hamburger menu link"></i>
+                </a>
+            </div>
+
+    </nav>
+
+    <main id="main">
+        <div id="cooper" class="pet_name">
+            <div class="pet_thumb">
+                <img src ="images/cooper.jpeg" alt="Border collie and lab mix laying his head on his stuffed animal toy" width="400">
+                <h2>Cooper</h2>
+            </div>
+            <div class="tile">
+                <div class="tile__face tile__face--front">
+                    <h3>About Me!</h3>
+            
+                    <p>Cooper is an 8yr old border collie and lab mix. We rescued him from the Humane Society as a puppy! He loves going on long walks/runs, but he stops to sniff something every few steps. He’s pretty friendly, but he loves to loudly bark at delivery people who ring the doorbell.</p> 
+                    <br>
+                    <p>Whenever it’s movie night, Cooper has to join on the couch/bed or he feels left out. He loves to cuddle and pats on his tummy. Cooper will play fetch for about 2 or 3 rounds, but he quickly gets bored. He leaves his toys all around the house for the rest of the family to find.</p>
+        
+                </div>
+                <div class="tile__face tile__face--back">
+                    <h3>I like...</h3>
+                    <ul class="likes">
+                        <li>Peanut butter</li>
+                        <li>Going on long walks</li>
+                        <li>Sleeping</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+            
+        <h3>Photo Gallery</h3>
+        <div class="pets_gallery">
+            <a href = "images/cooper_closeup.JPG" target="_blank" data-lightbox="cooper" data-title="Cooper Up-close" data-alt="Border collie / lab mix putting his face close to the camera">
+                <img src ="images/cooper_closeup.JPG" alt="Border collie / lab mix putting his face close to the camera" width="200">
+            </a>
+            <a href = "images/cooper_smiling.JPG" target="_blank" data-lightbox="cooper" data-title="Cooper Smiling" data-alt="Black and white colored dog smiling directly at the camera">
+                <img src ="images/cooper_smiling.JPG" alt="Black and white colored dog smiling directly at the camera" width="200">
+            </a>
+            <a href = "images/cooper_flowers.jpeg" target="_blank" data-lightbox="cooper" data-title="Cooper and Flowers" data-alt="Border collie / lab mix sniffing a bouquet of flowers in the sun">
+                <img src ="images/cooper_flowers.jpeg" alt="Border collie / lab mix sniffing a bouquet of flowers in the sun" width="200">
+            </a>
+            <a href = "images/cooper_puppy.JPG" target="_blank" data-lightbox="cooper" data-title="Baby Cooper" data-alt="Small border collie / lab mix puppy laying on the carpet">
+                <img src ="images/cooper_puppy.JPG" alt="Small border collie / lab mix puppy laying on the carpet" width="200">
+            </a>
+        </div>
+        
+
+        <div id="mocha" class="pet_name">
+            <div class="pet_thumb">
+                <img src="images/mocha.jpeg" width = "400" alt="Mocha in spicy red training suit laying down">
+                <h2>Mocha</h2>
+            </div>
+            <div class="tile">
+                <div class="tile__face tile__face--front">
+                    <h3>About Me!</h3>
+            
+                    <p>Mocha is a 5-year-old quarter Maltese, quarter Yorkshire Terrier, and half mutt. He was not adopted but actually born into the family and lives with his mommy Mochi and a loving family. Mocha likes to fool people into thinking that he's a dummy boy then making an intelligent comeback to surprise everyone of his big brain. He recently got a new toy that squeaks so high that he gets so excited everytime he chews on it.
+                        <br><br>
+                    If Mocha likes something or someone, he likes to rub his neck on it. This includes (but not limited to) rubber toys, favorite snacks, blankets, and human faces. As soon as someone lays down facing up, Mocha will run out from somewhere in the house and launch himself onto your face. It seems to be his favorite activity.</p>
+        
+                </div>
+                <div class="tile__face tile__face--back">
+                    <h3>I like...</h3>
+                    <ul class="likes">
+                        <li>Rubber toys</li>
+                        <li>Walks</li>
+                        <li>Anything edible</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+            
+        <h3>Photo Gallery</h3>
+        <div class="pets_gallery">
+            <a href = "images/disney_mocha.jpeg" target="_blank" data-lightbox="mocha" data-title="Disney Vibe Mocha" data-alt="Mocha giving disney character vibes">
+                <img src="images/disney_mocha.jpeg" width ="200" alt = "Mocha giving disney character vibes">
+            </a>
+            <a href = "images/chunky_mocha.jpg" target="_blank" data-lightbox="mocha" data-title="Chunky Mocha" data-alt="Mocha looking chunky from the back">
+                <img src="images/chunky_mocha.jpg"  width ="200" alt="Mocha looking chunky from the back">
+            </a>
+            <a href = "images/whirlwind_mocha.jpeg" target="_blank" data-lightbox="mocha" data-title="Whirlwind Mocha" data-alt="Mocha caught mid shake">
+                <img src="images/whirlwind_mocha.jpeg"  width ="200" alt="Mocha caught mid shake">
+            </a>
+            <a href = "images/sleazy_mocha.jpeg" target="_blank" data-lightbox="mocha" data-title="Mocha's Stare" data-alt="Mocha staring the camera down">
+                <img src="images/sleazy_mocha.jpeg"  width ="200" alt="Mocha staring the camera down">
+            </a>
+        </div>
+    </div>
+
+        <div id="zack" class="pet_name">
+            <div class="pet_thumb">
+                <img src="images/zamzam4.jpg" width = "400" alt="Zack, African grey parrot, close up">
+                <h2>Zack</h2>
+            </div>
+            <div class="tile">
+                <div class="tile__face tile__face--front">
+
+                    <p>African grey parrot, 3 years old, red tail, and standing on kitchen tile. Zack is an African grey parrot, aged around three years old. Zack loves flying and being outside of the cage at all times. He’s very nice but bites so much.
+                    <br><br>
+                    Zack’s favorite foods are unsalted sunflower seeds and mangos. He loves being able to sit on people’s shoulder and talking to them. Zack knows over 500 words and learns more everyday.</p>
+                </div>
+                <div class="tile__face tile__face--back">
+                    <h3>I like...</h3>
+                    <ul class="likes">
+                        <li>Sunflower seeds</li>
+                        <li>Flying</li>
+                        <li>Going on walls</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+            
+        <h3>Photo Gallery</h3>
+        <div class="pets_gallery">
+            <a href = "images/zamzam1.jpg" target="_blank" data-lightbox="zamzam" data-title="Zack on Cage" data-alt="Zack on his cage standing">
+                <img src="images/zamzam1.jpg" width ="200" alt = "Zack on his cage standing">
+            </a>
+            <a href = "images/zamzam2.jpg" target="_blank" data-lightbox="zamzam" data-title="Zack Staring into Camera" data-alt="Zack standing on his cage door, staring into the camera">
+                <img src="images/zamzam2.jpg"  width ="200" alt="Zack standing on his cage door, staring into the camera">
+            </a>
+            <a href = "images/zamzam3.jpg" target="_blank" data-lightbox="zamzam" data-title="Zack on Carpet" data-alt="Zack standing on a rug staring up towards the camera">
+                <img src="images/zamzam3.jpg"  width ="200" alt="Zack standing on a rug staring up towards the camera">
+            </a>
+            <a href = "images/zamzam5.jpg" target="_blank" data-lightbox="zamzam" data-title="Zack Cleaning" data-alt="Zack cleaning himself standing on top of the cage by his toys">
+                <img src="images/zamzam5.jpg"  width ="200" alt="Zack cleaning himself standing on top of the cage by his toys">
+            </a>
+        </div>
+    </div>
+
+        <div id="jingle" class="pet_name">
+            <div class="pet_thumb">
+                <img src="images/jingle.jpg" width = "400" alt="Cat buying food at store">
+                <h2>Jingle</h2>
+            </div>
+            <div class="tile">
+                <div class="tile__face tile__face--front">
+                    <h3>About Me!</h3>
+            
+                    <p>Jingle is a domestic shorthair cat with a white chest and belly and a striped black and gray back. His paws are white and they look like mittens.
+                        <br><br>
+                    Jingle loves going outside. He used to be an outdoor/indoor cat until we realized that he loved to get injured. Now, we take him on walks with a leash which he loves! Every time he sees me carrying the leash he goes crazy and meows to go out. Jingle is very mischievous, he has gotten into many different accidents. His first accident was outside; a bee stung his paw and he cried all night long. The second one was ALSO outside, he got stuck on a tree for four days. Finally, he came back home one day with his tail bleeding and ripped out. </p>
+        
+                </div>
+                <div class="tile__face tile__face--back">
+                    <h3>I like...</h3>
+                    <ul class="likes">
+                        <li>Going on walks</li>
+                        <li>Being pet</li>
+                        <li>Eating treats</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+            
+        <h3>Photo Gallery</h3>
+        <div class="pets_gallery">
+            <a href = "images/jingle_outside.jpg" target="_blank" data-lightbox="jingle" data-title="Jingle Outside" data-alt="A close up picture of Jingle’s face outside">
+                <img src="images/jingle_outside.jpg" width ="200" alt = "A close up picture of Jingle’s face outside">
+            </a>
+            <a href = "images/jingle_flowers.jpg" target="_blank" data-lightbox="jingle" data-title="Jingle with Flowers" data-alt="Jingle sitting next to the flowers in our garden">
+                <img src="images/jingle_flowers.jpg"  width ="200" alt="Jingle sitting next to the flowers in our garden">
+            </a>
+            <a href = "images/jingle_snow.jpg" target="_blank" data-lightbox="jingle" data-title="Jingle and Snow" data-alt="Jingle in the snow">
+                <img src="images/jingle_snow.jpg"  width ="200" alt="Jingle in the snow">
+            </a>
+            <a href = "images/jingle_window.jpg" target="_blank" data-lightbox="jingle" data-title="Jingle Watching Snow" data-alt="Jingle watching the snow outside">
+                <img src="images/jingle_window.jpg"  width ="200" alt="Jingle watching the snow outside">
+            </a>
+        </div>
+    </div>
+
+
+    <div id="bo" class="pet_name">
+        <div class="pet_thumb">
+            <img src="images/bo.jpg" width = "400" alt="Black and white dog sitting on grass">
+            <h2>Bo</h2>
+        </div>
+        <div class="tile">
+            <div class="tile__face tile__face--front">
+                <h3>About Me!</h3>
+        
+                <p>Bo is a Portuguese Water Dog with black and white fur. His paws are white too, so they always get dirty when outside. He is 12 years old, but he still likes to run around outside a lot.
+                <br><br>
+                He has an abundance of toys but only likes to play with a couple. He enjoys going on walks and especially on trails in the woods. He has a few dog friends that he likes to go on playdates with as well.</p>
+    
+            </div>
+            <div class="tile__face tile__face--back">
+                <h3>I like...</h3>
+                <ul class="likes">
+                    <li>The Sun</li>
+                    <li>Treats</li>
+                    <li>Dogs</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+            <h3>Photo Gallery</h3>
+            <div class="pets_gallery">
+                <a href = "images/bo_walking.jpg" target="_blank" data-lightbox="bo" data-title="Bo Walking" data-alt="black and white dog walking on grass">
+                    <img src="images/bo_walking.jpg" width ="200" alt = "black and white dog walking on grass">
+                </a>
+                <a href = "images/bo_and_friend.jpg" target="_blank" data-lightbox="bo" data-title="Bo and Friend" data-alt="Jblack and white dog sitting by other black dog">
+                    <img src="images/bo_and_friend.jpg"  width ="200" alt="black and white dog sitting by other black dog">
+                </a>
+                <a href = "images/bo_plane.jpg" target="_blank" data-lightbox="bo" data-title="Bo with Plane" data-alt="black and white dog in front of airplane">
+                    <img src="images/bo_plane.jpg"  width ="200" alt="black and white dog in front of airplane">
+                </a>
+                <a href = "images/bo_chair.jpg" target="_blank" data-lightbox="bo" data-title="Bo Sitting" data-alt="black and white dog sitting on top of chair">
+                    <img src="images/bo_chair.jpg"  width ="200" alt="black and white dog sitting on top of chair">
+                </a>
+            </div>
+        </div>
+
+    </main>
+    <script src="../js/mobilemenu.js"></script>
+    <script src = "../js/flip_card.js"></script>
+    <script src="dist/js/lightbox-plus-jquery.js"></script>
+    <script>
+        lightbox.option({
+          'resizeDuration': 500,
+          'wrapAround': true,
+          'maxHeight': 500,
+          'fadeDuration': 500
+        })
+
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("alive");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+              panel.style.display = "none";
+            } else {
+              panel.style.display = "block";
+            }
+          });
+        }
+
+        const columnList = document.querySelector(".column-list");
+        const listItems = columnList.querySelectorAll("li");
+        const columnCount = Math.ceil(listItems.length);
+
+        columnList.style.columnCount = columnCount;
+
+    </script>
+</body>
+</html>

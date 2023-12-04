@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600&family=Montserrat:wght@300&display=swap">
+</head>
+<body>
+    <a href ="#main" id= "skip" >Skip to Main Content</a>
+    <nav>
+        <div class="topnav">
+            <h1>Recipes
+                <i class="fa fa-cutlery"></i></h1>
+            <!-- Navigation links (hidden by default) -->
+            <div id="myLinks">
+                <li class="head">
+                    <a href="index.html">Travel</a>
+                  </li>
+                <li class="current head">
+                    <a href="recipes.html">Recipes</a>
+                    <button class="accordion">expand</button>
+                    <div class="panel">
+                        <ul class="column_list">
+                            <li><a href="#matcha">Matcha Cookies</a></li>
+                            <li><a href="#tres">Tres Leches Cake</a></li>
+                            <li><a href="#potato">Twice Baked Potato</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="head">
+                    <a href="pets.html">Pets</a>
+                </li>
+            </div>
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <button class="icon" onclick="myFunction()" aria-label="Toggle Navigation Menu">
+            <i class="fa fa-bars" alt="Hamburger menu link"></i>
+            </a>
+        </div>
+    </nav>
+
+    <main id="main">
+        <div id = "matcha" class="recipe_content">
+
+            <div class="recipe_thumb">
+                <img class="main_food" src="images/Matcha-Cookies.jpeg" width="400" alt="">
+                <h2>Matcha Cookies</h2>
+            </div>
+
+            <!-- Tab links -->
+            <div class="recipe_tab">
+                <div class="tab">
+                    <button class="tablinks" onclick="openCard(event, 'About')">About</button>
+                    <button class="tablinks" onclick="openCard(event, 'Ingredients')">Ingredients</button>
+                    <button class="tablinks" onclick="openCard(event, 'Steps')">Directions</button>
+                    <button class="tablinks" onclick="openCard(event, 'Additional')">Additional Images</button>
+                </div>
+                
+                <!-- Tab content -->
+                <div id="About" class="tabcontent">
+                    <h3>About</h3>
+                    <span>Origin: Japanese
+                    <br>
+                    Source:<a href="https://www.justonecookbook.com/green-tea-white-chocolate-cookies/" target="_blank"> Just One Cookbook</a>
+                    <br>
+                    Category: Dessert</span>
+                    <br><br>
+                    <p>
+                        These cookies have the perfect flavor balance of the earthiness from the matcha and the sweetness and creaminess from
+                        the white chocolate chips. They are crispy and sweet, perfect for an afternoon snack or dessert. Enjoy with a cup of tea!
+                    </p>
+                </div>
+                
+                <div id="Ingredients" class="tabcontent">
+                    <h3>Recipe Ingredients</h3>
+                    <ul class="ingredient">
+                        <li>All purpose flour</li>
+                        <li>Matcha powder</li>
+                        <li>Unsalted butter</li>
+                        <li>Kosher salt</li>
+                        <li>Confectioners sugar</li>
+                        <li>Egg yolks</li>
+                        <li>White chocolate chips</li>
+                    </ul>
+                </div>
+                
+                <div id="Steps" class="tabcontent">
+                    <h3>Recipe Steps</h3>
+                    <ol>
+                        <li>
+                            Combine flour and matcha powder in large bowl
+                            Sift the flour and matcha powder
+                        </li>
+                        <li>Beat softened butter until smooth and creamy</li>
+                        <li>Add salt and blend</li>
+                        <li>Add sugar and beat until soft and light</li>
+                        <li>Add egg yolks and mix until well combined</li>
+                        <li>Gradually add flour and matcha mixture and mix until well combined</li>
+                        <li>Add chocolate chips and mix until incorporated</li>
+                        <li>Divide dough into two pieces. Shape each piece into cylinders about 1.5in in diameter</li>
+                        <li>Wrap logs in plastic wrap and chill in fridge for at least two hours</li>
+                        <li>Slice into ⅓ inch rounds and place on a baking tray lined with parchment paper</li>
+                        <li>Bake at 350 degrees for 15 minutes</li>
+                    </ol>
+                </div>
+    
+                <div id="Additional" class="tabcontent">
+                    <h3>Additional Food Images</h3>
+                    <img class="additional_food" src="images/Cookies-on-tray.jpeg" width="200" alt="Close up of matcha cookies on baking tray">
+                    <img class="additional_food" src="images/Matcha-and-flour.jpeg" width="200" alt="Matcha and flour sifted into a bowl">
+                    <img class="additional_food" src="images/cookie-dough.jpeg" width="200" alt="Raw matcha cookie dough shaped into a cylinder">
+    
+                </div>
+            </div>
+            
+        </div>
+        
+        
+        <div id = "tres" class="recipe_content">
+            <div class="recipe_thumb">
+                <img class="main_food" src="images/tres_leches_cake.jpeg" width="400" alt="">                
+                <h2>Tres Leches Cake</h2>
+            </div>
+
+            <!-- Tab links -->
+            <div class="recipe_tab">
+                <div class="tab">
+                    <button class="tablinks" onclick="openCard(event, 'About_tres')">About</button>
+                    <button class="tablinks" onclick="openCard(event, 'Ingredients_tres')">Ingredients</button>
+                    <button class="tablinks" onclick="openCard(event, 'Steps_tres')">Directions</button>
+                    <button class="tablinks" onclick="openCard(event, 'Additional_tres')">Additional Images</button>
+                </div>
+                
+                <!-- Tab content -->
+                <div id="About_tres" class="tabcontent">
+                    <h3>About</h3>
+                    <span>Origin: Latin America
+                    <br>
+                    Source:<a href="https://www.allrecipes.com/recipe/7399/tres-leches-milk-cake/" target="_blank"> Allrecipes</a>
+                    <br>
+                    Category: Dessert</span>
+                    <br><br>
+                    <p>This cake is a staple at any Latin birthday or celebration. The name translates to "three milks" cake, and the cake is typically very moist and is best eaten wet. Rich in taste and historical tradition, Tres Leches Cake has become universally loved for its unique texture and decadent flavor profile.
+                    </p>
+                </div>
+                
+                <div id="Ingredients_tres" class="tabcontent">
+                    <h3>Recipe Ingredients</h3>
+                    <ul class="ingredient">
+                        <li>All purpose flour</li>
+                        <li>Baking powder</li>
+                        <li>White sugar/li>
+                        <li>Eggs</li>
+                        <li>Vanilla extract</li>
+                        <li>Whole milk</li>
+                        <li>Sweetened condensed milk</li>
+                        <li>Evaporated milk</li>
+                        <li>Heavy whipping cream</li>
+                    </ul>
+                </div>
+                
+                <div id="Steps_tres" class="tabcontent">
+                    <h3>Recipe Steps</h3>
+                    <ol>
+                        <li>Preheat the oven to 350 degrees F (175 degrees C)</li>
+                        <li>Grease and flour a 9x13-inch baking pan</li>
+                        <li>Sift flour and baking powder together; set aside</li>
+                        <li>Beat sugar and butter together in a large bowl with an electric mixer until light and fluffy</li>
+                        <li>Add eggs and vanilla; beat well</li>
+                        <li>Add flour mixture, about 1/2 cup at a time, mixing until well blended; pour batter into the prepared pan</li>
+                        <li>Bake in the preheated oven until a toothpick inserted into the center comes out clean, about 30 minutes</li>
+                        <li>Pierce cake all over with a fork; let cool to room temperature</li>
+                        <li>Mix whole milk, condensed milk, and evaporated milk together in a bowl; pour over the top of the cooled cake and allow to soak in</li>
+                        <li>Whip cream, remaining 1 cup of sugar, and 1 teaspoon vanilla in a chilled glass or metal bowl with an electric mixer until thick</li>
+                        <li>Spread over the top of the filling</li>
+                        <li>Keep cake refrigerated until serving</li>
+
+                    </ol>
+                </div>
+    
+                <div id="Additional_tres" class="tabcontent">
+                    <h3>Additional Food Images</h3>
+                    <img class="additional_food" src="images/tres_leches_close_up.jpeg" width="200" alt="Close up of Tres Leches Cake with strawberry topping">
+                    <img class="additional_food" src="images/tres_leches_w_fruits.jpeg" width="200" alt="Slice of cake with various fruits on top">
+                    <img class="additional_food" src="images/extra_moist_cake.jpg" width="200" alt="Extra moist cake, with brown cinnamon on top">
+                </div>
+            </div>
+            
+        </div>
+        
+
+        <div id = "potato" class="recipe_content">
+
+            <div class="recipe_thumb">
+                <img class="main_food" src="images/Bakedpotato.jpeg" width="400" alt="">                
+                <h2>Twice Baked Potato</h2>
+            </div>
+
+            <!-- Tab links -->
+            <div class="recipe_tab">
+                <div class="tab">
+                    <button class="tablinks" onclick="openCard(event, 'About_potato')">About</button>
+                    <button class="tablinks" onclick="openCard(event, 'Ingredients_potato')">Ingredients</button>
+                    <button class="tablinks" onclick="openCard(event, 'Steps_potato')">Directions</button>
+                    <button class="tablinks" onclick="openCard(event, 'Additional_potato')">Additional Images</button>
+                </div>
+                
+                <!-- Tab content -->
+                <div id="About_potato" class="tabcontent">
+                    <h3>About</h3>
+                    <span>Origin: South America
+                    <br>
+                    Source:<a href="https://www.allrecipes.com/recipe/24332/ultimate-twice-baked-potatoes/" target="_blank"> Allrecipes</a>
+                    <br>
+                    Category: Main dish, comfort food</span>
+                    <br><br>
+                    <p>These twice-baked potatoes work perfectly as a simple, crowd-pleasing entrée or as a rich side dish. It is believed that baked potatoes originate from South America, or more specifically, Peru. The Inca Indians in Peru were said to be the first to originally cultivate potatoes and when the Spanish conquistadors conquered Peru, they brought the potato to Europe.</p>
+                </div>
+                
+                <div id="Ingredients_potato" class="tabcontent">
+                    <h3>Recipe Ingredients</h3>
+                    <ul class="ingredient">
+                        <li>Large baking potatoes</li>
+                        <li>Bacon</li>
+                        <li>Sour cream</li>
+                        <li>Milk</li>
+                        <li>Butter</li>
+                        <li>Salt</li>
+                        <li>Pepper</li>
+                        <li>Shredded cheddar cheese</li>
+                        <li>Green onions</li>
+                    </ul>
+                </div>
+                
+                <div id="Steps_potato" class="tabcontent">
+                    <h3>Recipe Steps</h3>
+                    <ol>
+                        <li>Gather ingredients and preheat the oven to 350 degrees F (175 degrees C)</li>
+                        <li>Bake potatoes in the preheated oven until tender, about 1 hour, depending on the size of your potatoes</li>
+                        <li>Set potatoes aside until cool enough to handle</li>
+                        <li>Meanwhile, place bacon in a large, deep skillet</li>
+                        <li>Cook over medium-high heat until evenly brown; drain, crumble, and set aside</li>
+                        <li>Slice potatoes in half lengthwise and scoop the flesh into a large bowl; save skins</li>
+                        <li>Add sour cream, milk, butter, salt, pepper, 1/2 cup cheese, and 1/2 of the green onions to the potato; mix with a hand mixer until well blended and creamy</li>
+                        <li>Spoon the mixture into the potato skins; top each with remaining cheese, green onions, and bacon</li>
+                        <li>Pierce cake all over with a fork; let cool to room temperature</li>
+                        <li>Return potatoes to the preheated oven and continue baking until the cheese is melted, about 15 minutes</li>
+                        <li>Serve hot</li>
+        
+                    </ol>
+                </div>
+    
+                <div id="Additional_potato" class="tabcontent">
+                    <h3>Additional Food Images</h3>
+                    <img class="additional_food" src="images/Ingredients.jpeg" width="200" alt="All the ingredients needed for this recipe">
+                    <img class="additional_food" src="images/Slicedpotatoes.jpeg" width="200" alt="Scooped out potatoes">
+                    <img class="additional_food" src="images/mixture.jpeg" width="200" alt="Mixture to put in the potatoes">  
+                </div>
+            </div>
+            
+        </div>
+        
+    </main>
+    <script src="../js/mobilemenu.js"></script>
+    <script src="../js/tabs.js"></script>
+    <script src="../js/flip_card.js"></script>
+    <script src="dist/js/lightbox-plus-jquery.js"></script>
+    <script>
+        lightbox.option({
+          'resizeDuration': 500,
+          'wrapAround': true,
+          'maxHeight': 500,
+          'fadeDuration': 500
+        })
+
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("alive");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+              panel.style.display = "none";
+            } else {
+              panel.style.display = "block";
+            }
+          });
+        }
+
+        const columnList = document.querySelector(".column-list");
+        const listItems = columnList.querySelectorAll("li");
+        const columnCount = Math.ceil(listItems.length);
+
+        columnList.style.columnCount = columnCount;
+
+    </script>
+</body>
+</html>
