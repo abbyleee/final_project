@@ -1,0 +1,343 @@
+body {
+    background-image: url("../images/background_pattern.jpg");
+    background-color: white;
+    margin: 20px;
+}
+
+#skip {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+
+#skip:focus {
+    position: static;
+    width: auto;
+    height: auto;
+}
+
+nav {
+    border: 2px solid black;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav li {
+    display: inline-block;
+    padding: 20px;
+    text-align: center;
+    border: solid 1px black;
+}
+
+nav li.current { 
+    background-color: plum;
+}
+
+a {
+    text-decoration: underline;
+    color: purple;
+}
+
+a:hover {
+    color: blue;
+}
+
+a:focus {
+    color: blue;
+}
+
+h1 {
+    font-size: 45px;
+    text-align: center;
+    text-decoration: underline;
+    font-family: 'Barlow Condensed', sans-serif;
+    text-transform: uppercase;
+    padding-top: 10px;
+}
+
+h2 {
+    font-size: 40px;
+    font-family: 'Barlow Condensed', sans-serif;
+    padding-top: 20px;
+    font-style: italic;
+}
+
+h3 {
+    font-size: 25px;
+    color: #4a7ba6;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    padding-top: 15px;
+
+}
+p {
+    line-height: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+}
+
+figure {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+figcaption {
+    text-align: center;
+    font-size: 13px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+figure img {
+    display: block;
+    margin: auto;
+}
+
+li {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+}
+
+span {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    line-height: 30px;
+}
+
+.main_food {
+    padding-top: 10px;
+    display: block;
+    margin: auto;
+}
+
+.ingredient, .likes {
+    list-style-type: circle;
+    padding: 0;
+}
+
+ol {
+    list-style-type: lower-roman;
+    padding: 0;
+}
+
+ol li, .ingredient li, .likes li {
+    padding: 5px;
+    margin-left: 20px;
+}
+
+.additional_food {
+    display: block;
+    margin: auto;
+    padding: 5px;
+}
+
+.thumbnail, .thumbnail_gif {
+    display: block;
+    margin: auto;
+    padding: 5px 0;
+}
+
+.pets_gallery {
+    display: block;
+    margin: auto;
+}
+
+#main_nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: auto;
+}
+
+figure img:hover {
+    filter: grayscale(100%);
+}
+
+.pets_gallery img:hover {
+    filter: grayscale(100%);
+}
+
+.additional_food:hover {
+    filter: grayscale(100%);
+}
+
+
+@media screen and (min-width: 768px) {
+
+    figure {
+        display: block;
+        margin: auto;
+    }
+
+    figure img {
+        border: solid purple 5px;
+    }
+
+    figcaption {
+        margin-top: 10px;
+        padding-bottom: 20px;
+    }
+
+
+    #skip {
+        position: absolute;
+        top: 0px;
+        left: 10px;
+    }
+
+    .main_container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .thumbnail {
+        width: 100%;
+        height: 100%; 
+        padding-right: 5px;
+    }
+
+    .thumbnail_gif {
+        width: 100%;
+        height: 100%; 
+        padding-left: 5px;
+    }
+
+    .description {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+    }
+    .main_food {
+        padding-right: 5px;
+    }
+    .description p {
+        display: block;
+        margin: auto;
+        padding-left: 5px;
+    }
+
+    #main_nav {
+            grid-template-columns: 1fr;
+        }
+
+    .head {
+        text-align: left;
+    }
+
+    .head ul {
+        display: grid;
+
+    }
+
+    .column_list li {
+        border: dashed black 1px;
+    }
+
+    .accordion {
+        color: rgba(0, 0, 0, 0);
+        cursor: pointer;
+        width: 100%;
+        border: none;
+        outline: none;
+        transition: 0.4s;
+    }
+
+    .accordion:after {
+        content: "\02795"; 
+        font-size: 13px;
+        color: #777;
+        float: right;
+        margin-left: 5px;
+    }
+
+    .active:after {
+        content: "\2796"; 
+    }
+   
+    .panel {
+        padding: 0 18px;
+        display: none;
+        overflow: hidden;
+    }
+
+    .column-list {
+        column-gap: 20px;
+        padding: 0;
+        list-style-type: none;
+      }
+      
+    .column-list li {
+        margin: 0 0 10px;
+    }      
+
+
+    .pets_gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .pets_gallery img {
+        display: block;
+        margin: auto;
+        height: 100%;
+        width: 100%;
+        padding: 5px;
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    
+}
+
+@media screen and (min-width: 1200px) {
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .pets_gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+    h1 {
+        position: absolute;
+        left: 0;
+        animation: mymove 4s ease-in-out 5 alternate forwards;
+    }
+
+    h2 {
+        padding-top: 80px;
+    }
+
+    @keyframes mymove {
+        0% {
+            left: 0;
+        }
+        50% {
+            left: calc(100% - 150px); 
+        }
+        100% {
+            left: calc(50% - 50px);
+        }
+    }
+
+
+
+}
+
+@media (prefers-reduced-motion: reduce) {
+    h1 {
+        animation: none;
+    }
+    .thumbnail_gif {
+        display: none;
+    }
+}
